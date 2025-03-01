@@ -2,7 +2,7 @@
 {
     internal enum Consciousness
     {
-        Alert,
+        Alert = 0,
         CVPU
     }
 }

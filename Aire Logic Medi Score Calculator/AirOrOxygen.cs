@@ -2,7 +2,7 @@
 {
     internal enum AirOrOxygen
     {
-        Air,
-        Oxygen
+        Air = 0,
+        Oxygen = 2
     }
 }

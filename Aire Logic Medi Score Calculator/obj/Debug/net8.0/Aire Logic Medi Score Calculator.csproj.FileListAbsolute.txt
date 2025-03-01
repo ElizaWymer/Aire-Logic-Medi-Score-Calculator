@@ -12,3 +12,19 @@ C:\Users\eliza\source\repos\Aire Logic Medi Score Calculator\Aire Logic Medi Sco
 C:\Users\eliza\source\repos\Aire Logic Medi Score Calculator\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.pdb
 C:\Users\eliza\source\repos\Aire Logic Medi Score Calculator\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.genruntimeconfig.cache
 C:\Users\eliza\source\repos\Aire Logic Medi Score Calculator\Aire Logic Medi Score Calculator\obj\Debug\net8.0\ref\Aire Logic Medi Score Calculator.dll
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\bin\Debug\net8.0\Aire Logic Medi Score Calculator.exe
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\bin\Debug\net8.0\Aire Logic Medi Score Calculator.deps.json
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\bin\Debug\net8.0\Aire Logic Medi Score Calculator.runtimeconfig.json
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\bin\Debug\net8.0\Aire Logic Medi Score Calculator.dll
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\bin\Debug\net8.0\Aire Logic Medi Score Calculator.pdb
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.AssemblyInfoInputs.cache
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.AssemblyInfo.cs
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.csproj.CoreCompileInputs.cache
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.sourcelink.json
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.dll
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\refint\Aire Logic Medi Score Calculator.dll
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.pdb
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.genruntimeconfig.cache
+C:\Users\eliza\source\repos\Aire\Aire Logic Medi Score Calculator\obj\Debug\net8.0\ref\Aire Logic Medi Score Calculator.dll
+C:\Users\eliza\source\repos\Aire Logic Medi Score Calculator\Aire Logic Medi Score Calculator\obj\Debug\net8.0\Aire Logic Medi Score Calculator.sourcelink.json

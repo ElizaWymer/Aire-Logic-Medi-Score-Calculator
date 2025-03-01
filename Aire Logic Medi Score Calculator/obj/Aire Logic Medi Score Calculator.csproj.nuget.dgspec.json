@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliza\\source\\repos\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj": {}
+    "C:\\Users\\eliza\\source\\repos\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliza\\source\\repos\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj": {
+    "C:\\Users\\eliza\\source\\repos\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliza\\source\\repos\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\eliza\\source\\repos\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj",
         "projectName": "Aire Logic Medi Score Calculator",
-        "projectPath": "C:\\Users\\eliza\\source\\repos\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj",
+        "projectPath": "C:\\Users\\eliza\\source\\repos\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj",
         "packagesPath": "C:\\Users\\eliza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliza\\source\\repos\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\obj\\",
+        "outputPath": "C:\\Users\\eliza\\source\\repos\\Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

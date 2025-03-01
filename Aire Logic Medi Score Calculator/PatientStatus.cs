@@ -14,10 +14,10 @@
             this.consciousness = consc;
             this.respirationRange = resp;   
             this.spO2 = spo2;
-            this.temperature = temp;
+            this.temperature = (float)Math.Round(temp, 1);
         }
 
-        public AirOrOxygen GetBreathingState
+        public AirOrOxygen BreathingState
         {
             get
             {

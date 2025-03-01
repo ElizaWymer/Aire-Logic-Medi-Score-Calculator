@@ -3,12 +3,12 @@
 static int MediScoreCalculator(PatientStatus status)
 {
     int score = 0;
-    if (status.GetBreathingState == AirOrOxygen.Oxygen)
+    if ((int)status.BreathingState == 2)
     {
         score += 2;
     }
 
-    if (status.GetConsciousness != Consciousness.Alert)
+    if ((int)status.GetConsciousness != 0)
     {
         score += 3;
     }
@@ -31,8 +31,8 @@ static int MediScoreCalculator(PatientStatus status)
     if 
     (
         status.getSpO2 == 86 || status.getSpO2 == 87 ||
-        status.getSpO2 == 93 && status.GetBreathingState == AirOrOxygen.Oxygen ||
-        status.getSpO2 == 94 && status.GetBreathingState == AirOrOxygen.Oxygen
+        status.getSpO2 == 93 && status.BreathingState == AirOrOxygen.Oxygen ||
+        status.getSpO2 == 94 && status.BreathingState == AirOrOxygen.Oxygen
     )
     {
         score += 1;
@@ -41,14 +41,14 @@ static int MediScoreCalculator(PatientStatus status)
     else if
     (
         status.getSpO2 == 84 || status.getSpO2 == 85 ||
-        status.getSpO2 == 95 && status.GetBreathingState == AirOrOxygen.Oxygen ||
-        status.getSpO2 == 96 && status.GetBreathingState == AirOrOxygen.Oxygen
+        status.getSpO2 == 95 && status.BreathingState == AirOrOxygen.Oxygen ||
+        status.getSpO2 == 96 && status.BreathingState == AirOrOxygen.Oxygen
     )
     {
         score += 2;
     }
 
-    else if (status.getSpO2 <= 83 || status.getSpO2 >= 97 && status.GetBreathingState == AirOrOxygen.Oxygen)
+    else if (status.getSpO2 <= 83 || status.getSpO2 >= 97 && status.BreathingState == AirOrOxygen.Oxygen)
     {
         score += 3;
     }
@@ -69,6 +69,10 @@ static int MediScoreCalculator(PatientStatus status)
     return score;
 }
 
-PatientStatus patient1 = new PatientStatus(AirOrOxygen.Air, Consciousness.Alert, 15, 90, 37);
+PatientStatus patient1 = new PatientStatus(AirOrOxygen.Air, Consciousness.Alert, 15, 90, 37.2f);
+PatientStatus patient2 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 10, 86, 38.53f);
+PatientStatus patient3 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 26, 98, 32.347f);
 
-Console.WriteLine("The patient's final Medi score is " + MediScoreCalculator(patient1));
+Console.WriteLine("Patient 1's final Medi score is " + MediScoreCalculator(patient1));
+Console.WriteLine("Patient 2's final Medi score is " + MediScoreCalculator(patient2));
+Console.WriteLine("Patient 3's final Medi score is " + MediScoreCalculator(patient3));
