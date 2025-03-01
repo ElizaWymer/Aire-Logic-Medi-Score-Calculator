@@ -66,12 +66,32 @@ static int MediScoreCalculator(PatientStatus status)
         score += 3;
     }
 
+    if
+        (
+            status.GetIsFasting && status.GetCBG >= 3.5 && status.GetCBG <= 3.9 ||
+            status.GetIsFasting && status.GetCBG >= 5.5 && status.GetCBG <= 5.9 ||
+            !status.GetIsFasting && status.GetCBG >= 4.5 && status.GetCBG <= 5.8 ||
+            !status.GetIsFasting && status.GetCBG >= 7.9 && status.GetCBG <= 8.9 
+        )
+    {
+        score += 2;
+    }
+
+    else if 
+        (
+            status.GetIsFasting && status.GetCBG <= 3.4 || status.GetIsFasting && status.GetCBG >= 6 ||
+            !status.GetIsFasting && status.GetCBG <= 4.5 || !status.GetIsFasting && status.GetCBG >= 9
+        )
+    {
+        score += 3;
+    }
+
     return score;
 }
 
-PatientStatus patient1 = new PatientStatus(AirOrOxygen.Air, Consciousness.Alert, 15, 90, 37.2f);
-PatientStatus patient2 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 10, 86, 38.53f);
-PatientStatus patient3 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 26, 98, 32.347f);
+PatientStatus patient1 = new PatientStatus(AirOrOxygen.Air, Consciousness.Alert, 15, 90, 37.2f, false, 6.25f);
+PatientStatus patient2 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 10, 86, 38.53f, false, 4.6f);
+PatientStatus patient3 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 26, 98, 32.347f, true, 6.3249f);
 
 Console.WriteLine("Patient 1's final Medi score is " + MediScoreCalculator(patient1));
 Console.WriteLine("Patient 2's final Medi score is " + MediScoreCalculator(patient2));
