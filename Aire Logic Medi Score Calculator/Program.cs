@@ -2,37 +2,51 @@
 
 static int MediScoreCalculator(PatientStatus status)
 {
+    //Initialises the default score as 0
     int score = 0;
-    if ((int)status.BreathingState == 2)
+
+    //Checks whether the breathing state entered matches the int value of the AirOrOxygen enum value Oxygen
+    //If it does the score is increased by two
+    //If the breathing state doesn't match int int value of either AirOrOxygen enum values then an error message is displayed and the calculation is cancelled
+    if(status.BreathingState != ((int)AirOrOxygen.Air) && status.BreathingState != ((int)AirOrOxygen.Oxygen))
+    {
+        Console.WriteLine("\nThe user has not been given a valid breathing state\nPlease enter 0 if they're breathing air or 2 if they're breathing supplemental oxygen\n");
+        return score;
+    }
+    if (status.BreathingState == ((int)AirOrOxygen.Oxygen))
     {
         score += 2;
     }
 
-    if ((int)status.GetConsciousness != 0)
+    //Checks whether the consciousness entered matches the int value of the Consciousness enum value Alert
+    //If it doesn't then the patient is considered CVPU and the score is increased by three
+    if (status.Consciousness != (int)Consciousness.Alert)
     {
         score += 3;
     }
 
-    if (status.GetRespirationRange >= 9 && status.GetRespirationRange <= 11)
+    //The following if and else if statements check the respiration range of the patient and increase the score accordingly
+    if (status.RespirationRange >= 9 && status.RespirationRange <= 11)
     {
         score += 1;
     }
 
-    else if (status.GetRespirationRange >= 21 &&  status.GetRespirationRange <= 24)
+    else if (status.RespirationRange >= 21 &&  status.RespirationRange <= 24)
     {
         score += 2;
     }
 
-    else if (status.GetRespirationRange <= 8 || status.GetRespirationRange >= 25)
+    else if (status.RespirationRange <= 8 || status.RespirationRange >= 25)
     {
         score += 3;
     }
 
-    if 
+    //The following if and else if statements check the SpO2 of the patient and increase the score accordingly
+    if
     (
-        status.getSpO2 == 86 || status.getSpO2 == 87 ||
-        status.getSpO2 == 93 && status.BreathingState == AirOrOxygen.Oxygen ||
-        status.getSpO2 == 94 && status.BreathingState == AirOrOxygen.Oxygen
+        status.SpO2 == 86 || status.SpO2 == 87 ||
+        status.SpO2 == 93 && status.BreathingState == (int)AirOrOxygen.Oxygen ||
+        status.SpO2 == 94 && status.BreathingState == (int)AirOrOxygen.Oxygen
     )
     {
         score += 1;
@@ -40,38 +54,41 @@ static int MediScoreCalculator(PatientStatus status)
 
     else if
     (
-        status.getSpO2 == 84 || status.getSpO2 == 85 ||
-        status.getSpO2 == 95 && status.BreathingState == AirOrOxygen.Oxygen ||
-        status.getSpO2 == 96 && status.BreathingState == AirOrOxygen.Oxygen
+        status.SpO2 == 84 || status.SpO2 == 85 ||
+        status.SpO2 == 95 && status.BreathingState == (int)AirOrOxygen.Oxygen ||
+        status.SpO2 == 96 && status.BreathingState == (int)AirOrOxygen.Oxygen
     )
     {
         score += 2;
     }
 
-    else if (status.getSpO2 <= 83 || status.getSpO2 >= 97 && status.BreathingState == AirOrOxygen.Oxygen)
+    else if (status.SpO2 <= 83 || status.SpO2 >= 97 && status.BreathingState == (int)AirOrOxygen.Oxygen)
     {
         score += 3;
     }
 
-    if (status.GetTemperature > 35 && status.GetTemperature <= 36 || status.GetTemperature > 38 && status.GetTemperature <= 39)
+    //The following if and else if statements check the temperature of the patient and increase the score accordingly
+    if (status.Temperature > 35 && status.Temperature <= 36 || status.Temperature > 38 && status.Temperature <= 39)
     {
         score += 1;
     }
-    else if (status.GetTemperature > 39)
+    else if (status.Temperature > 39)
     {
         score += 2;
     }
-    else if (status.GetTemperature <= 35)
+    else if (status.Temperature <= 35)
     {
         score += 3;
     }
 
+    //The following if and else if statement check whether the patient is fasting and their CBG
+    //Based on whether the patient is fasting or not the CBG is used to calculate the wellness of the patient and their medi score is increased accordingly
     if
         (
-            status.GetIsFasting && status.GetCBG >= 3.5 && status.GetCBG <= 3.9 ||
-            status.GetIsFasting && status.GetCBG >= 5.5 && status.GetCBG <= 5.9 ||
-            !status.GetIsFasting && status.GetCBG >= 4.5 && status.GetCBG <= 5.8 ||
-            !status.GetIsFasting && status.GetCBG >= 7.9 && status.GetCBG <= 8.9 
+            status.IsFasting && status.CBG >= 3.5 && status.CBG <= 3.9 ||
+            status.IsFasting && status.CBG >= 5.5 && status.CBG <= 5.9 ||
+            !status.IsFasting && status.CBG >= 4.5 && status.CBG <= 5.8 ||
+            !status.IsFasting && status.CBG >= 7.9 && status.CBG <= 8.9 
         )
     {
         score += 2;
@@ -79,19 +96,26 @@ static int MediScoreCalculator(PatientStatus status)
 
     else if 
         (
-            status.GetIsFasting && status.GetCBG <= 3.4 || status.GetIsFasting && status.GetCBG >= 6 ||
-            !status.GetIsFasting && status.GetCBG <= 4.5 || !status.GetIsFasting && status.GetCBG >= 9
+            status.IsFasting && status.CBG <= 3.4 || status.IsFasting && status.CBG >= 6 ||
+            !status.IsFasting && status.CBG <= 4.5 || !status.IsFasting && status.CBG >= 9
         )
     {
         score += 3;
     }
 
+    //Returns the score as however much it has increased by at the end of the calculation
     return score;
 }
 
-PatientStatus patient1 = new PatientStatus(AirOrOxygen.Air, Consciousness.Alert, 15, 90, 37.2f, false, 6.25f);
-PatientStatus patient2 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 10, 86, 38.53f, false, 4.6f);
-PatientStatus patient3 = new PatientStatus(AirOrOxygen.Oxygen, Consciousness.CVPU, 26, 98, 32.347f, true, 6.3249f);
+/*
+ * Initialisation of the patient objects
+ * One with the lowest medi score of 0
+ * One with a median medi score of 9
+ * And one with the highest medi score possible of 17
+*/
+PatientStatus patient1 = new PatientStatus(0, 0, 15, 90, 37.2f, false, 6.25f);
+PatientStatus patient2 = new PatientStatus(2, 3, 12, 86, 38.53f, false, 4.6f);
+PatientStatus patient3 = new PatientStatus(13, 9, 26, 98, 32.347f, true, 6.3249f);
 
 Console.WriteLine("Patient 1's final Medi score is " + MediScoreCalculator(patient1));
 Console.WriteLine("Patient 2's final Medi score is " + MediScoreCalculator(patient2));

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aire Logic Medi Score Calculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61bc2cca7f27d577e21c94949a8d7f8b6e1d1cfa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34038ef9b35ca96195a8d8b31025a0d5250e90af")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aire Logic Medi Score Calculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aire Logic Medi Score Calculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
