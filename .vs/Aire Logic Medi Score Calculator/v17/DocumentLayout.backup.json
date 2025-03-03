@@ -9,14 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AFC1AB1D-E61B-4845-86C4-B1F1920BE20E}|Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj|c:\\users\\eliza\\downloads\\aire-logic-medi-score-calculator\\aire logic medi score calculator\\patientstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC1AB1D-E61B-4845-86C4-B1F1920BE20E}|Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj|solutionrelative:aire logic medi score calculator\\patientstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFC1AB1D-E61B-4845-86C4-B1F1920BE20E}|Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj|c:\\users\\eliza\\downloads\\aire-logic-medi-score-calculator\\aire logic medi score calculator\\airoroxygen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC1AB1D-E61B-4845-86C4-B1F1920BE20E}|Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj|solutionrelative:aire logic medi score calculator\\airoroxygen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFC1AB1D-E61B-4845-86C4-B1F1920BE20E}|Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj|c:\\users\\eliza\\downloads\\aire-logic-medi-score-calculator\\aire logic medi score calculator\\consciousness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC1AB1D-E61B-4845-86C4-B1F1920BE20E}|Aire Logic Medi Score Calculator\\Aire Logic Medi Score Calculator.csproj|solutionrelative:aire logic medi score calculator\\consciousness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,34 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AirOrOxygen.cs",
-              "DocumentMoniker": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\AirOrOxygen.cs",
-              "RelativeDocumentMoniker": "Aire Logic Medi Score Calculator\\AirOrOxygen.cs",
-              "ToolTip": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\AirOrOxygen.cs",
-              "RelativeToolTip": "Aire Logic Medi Score Calculator\\AirOrOxygen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T09:40:34.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Consciousness.cs",
-              "DocumentMoniker": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Consciousness.cs",
-              "RelativeDocumentMoniker": "Aire Logic Medi Score Calculator\\Consciousness.cs",
-              "ToolTip": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Consciousness.cs",
-              "RelativeToolTip": "Aire Logic Medi Score Calculator\\Consciousness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T20:08:06.351Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -62,7 +28,7 @@
               "RelativeDocumentMoniker": "Aire Logic Medi Score Calculator\\PatientStatus.cs",
               "ToolTip": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\PatientStatus.cs",
               "RelativeToolTip": "Aire Logic Medi Score Calculator\\PatientStatus.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAApwBMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-01T19:56:27.893Z",
               "EditorCaption": ""
@@ -73,9 +39,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Program.cs",
               "RelativeDocumentMoniker": "Aire Logic Medi Score Calculator\\Program.cs",
-              "ToolTip": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Program.cs*",
-              "RelativeToolTip": "Aire Logic Medi Score Calculator\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\eliza\\Downloads\\Aire-Logic-Medi-Score-Calculator\\Aire Logic Medi Score Calculator\\Program.cs",
+              "RelativeToolTip": "Aire Logic Medi Score Calculator\\Program.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAMwGsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-01T19:52:46.507Z",
               "EditorCaption": ""

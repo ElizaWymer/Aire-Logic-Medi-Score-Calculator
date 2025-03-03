@@ -12,6 +12,10 @@
         private int respirationRange;
         private int spO2;
         private float temperature;
+
+        private int lastScore;
+        private DateTime dateOfLastScore;
+
         private bool isFasting;
         private float cbg;
 
@@ -91,6 +95,30 @@
             set
             {
                 temperature = value;
+            }
+        }
+
+        public int LastScore
+        {
+            get
+            {
+                return lastScore;
+            }
+            set
+            {
+                lastScore = value;
+            }
+        }
+
+        public DateTime DateOfLastScore
+        {
+            get
+            {
+                return dateOfLastScore;
+            }
+            set
+            {
+                dateOfLastScore = value;
             }
         }
 
